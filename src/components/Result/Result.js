@@ -7,15 +7,13 @@ const Result = ({error, weather}) => {
 
   if(!error && weather.city){
     startValue = (
-      <>
+      <div className="Result">
         <p>Weather results for city: <strong>{weather.city}</strong></p>
-        <ul>
-          <li>Date: {weather.date}</li>
-          <li>Actual temp: {Math.ceil(weather.temp -273.72)} °C</li>
-          <li>Today's sunrise at: {inception(weather.sunrise)}</li>
-          <li>Today's sunset at: {inception(weather.sunset)}</li>
-        </ul>
-      </>
+        <p>Date: <strong>{weather.date}</strong></p>
+        <p>Actual temp: <strong>{Math.ceil(weather.temp -273.72)} °C</strong></p>
+        <p>Today's sunrise at: <strong>{inception(weather.sunrise)}</strong></p>
+        <p>Today's sunset at: <strong>{inception(weather.sunset)}</strong></p>
+      </div>
     )
   }
   return (

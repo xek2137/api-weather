@@ -14,6 +14,7 @@ const App = () => {
   const [err, setErr] = useState("");
 
   const actualWeather = {
+    value,
     date,
     city,
     sunrise,
@@ -53,14 +54,16 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1>Weather app</h1>
-      <Content value={value}
-               change={handleInputChange}
-               submit={handleCitySubmit}
-      />
+      <div className="Container">
+        <h1>Weather app</h1>
+        <Content value={value}
+                 change={handleInputChange}
+                 submit={handleCitySubmit}
+        />
       <Result error={err}
               weather={actualWeather}
       />
+      </div>
     </div>
   );
 }

@@ -1,0 +1,52 @@
+.App input, .App button {
+  margin: 12px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.App input {
+  border: 2px solid #dadada;
+  border-radius: 7px;
+  margin: 0 8px;
+}
+
+.App input:focus {
+  outline: none;
+  border-color: #9ecaed;
+  box-shadow: 0 0 10px #9ecaed;
+}
+
+.App button {
+  border-radius: 5px;
+  background-color: rgb(0, 84, 110);
+  color: #fff;
+}
+
+.App button:hover {
+  background-color: rgb(0, 174, 210);;
+}
+
+.App .Container {
+  text-align: center;
+  padding-top: 20px;
+  width: 500px;
+  margin: auto;
+}
+
+.App .Result {
+  padding-left: 42px;
+  margin-left: 62px;
+  text-align: left;
+}
+
+h1 {
+  font-size: 42px;
+}
+
+p:first-of-type {
+  font-size: 24px;
+}
+p {
+  padding-bottom: 12px;
+  font-size: 18px;
+}
